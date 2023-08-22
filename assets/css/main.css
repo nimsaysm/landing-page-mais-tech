@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,300&family=Roboto:wght@300;400;700&display=swap');
+@import url('./basicos.css');
+@import url('./elementos-secundarios.css');
+@import url('./regras.css');
+
+:root {
+    --purple: #7F56D9;
+    --dark-purple: #6941C6;
+    --medium-purple-background: #E9D7FE;
+    --light-purple-background: #F9F5FF;
+    --blue-background: #D0D5DD;
+    --blue-color-text: #344054;
+    --shadow: drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.284));
+    --font-normal: 1.6rem;
+    --font-large: 2.2rem;
+    --radius: 1rem;
+    --transition: all 0.3s linear;
+    --font-family: 'Open Sans', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#header-principal, #main-contato, #links, #main-index, #botoes, #Parceiros, #Metodos, #Cursos, #Depoimentos {
+    padding: 1rem;
+}
+
+#header-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#menu{
+    color: black;
+    margin-left: 1.5rem;
+}
+
+#links {
+    background-color: var(--blue-background);
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    height: 100%;
+    line-height: 4rem;
+}
+
+#nav-bar {
+    display: none;
+}
+
+#main-index {
+    display: grid;
+    gap: 2;
+    grid-template-areas: 
+    "titulo titulo"
+    "texto texto"
+    "botoes img"
+    "botoes img";
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+#titulo {
+    grid-area: titulo;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+#descricao-principal{
+    grid-area: texto;
+    margin-bottom: 3rem;
+    width: 100%;
+    line-height: 3.5rem;
+}
+
+#imagem-principal {
+    grid-area: img;
+    border-radius: 50%;
+    width: 30vw;
+}
+
+#Parceiros {
+    background-color: var(--blue-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#empresas h3 {
+    color: var(--blue-color-text);
+}
+
+#Metodos {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Cursos {
+    margin-bottom: 3rem;
+}
+
+#imagens-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    filter: var(--shadow);
+}
+
+#Depoimentos {
+    margin-bottom: 7rem;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+#Inscrever {
+    background-color: var(--purple);
+    padding: 2rem 0;
+    display: grid;
+    justify-items: center;
+}
+
+#form-inscricao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.536);
+    display: grid;
+    place-items: center;
+    align-items: center;
+    transition: var(--transition);
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1000;
+}
+
+form {
+    border-radius: 1.5rem;
+    background-color: white;
+    color: black;
+    padding: 2rem;    
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 1001;
+}
+
+.info-incricao {
+    margin: 1rem;
+}
+
+#form-inscricao input, select {
+    padding: 0.5rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1.5rem;
+    width: 20rem;
+    font-size: 1.4rem;
+    font-family: var(--font-family);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+#form-inscricao #idade {
+    width: 1rem;
+}
+
+#fechar-form {
+    background-color: white;
+    border: none;
+    font-size: 2.5rem;
+    font-family: var(--font-family);
+    justify-self: end;
+    color: var(--purple);
+}
+
+#confirmar-dados {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue-background);
+    display: grid;
+    place-items: center;
+    align-items: center;
+    transition: var(--transition);
+    visibility: hidden;
+    opacity: 0;
+    z-index: -900;
+}
+
+#dados-inscricao {
+    border-radius: 1.5rem;
+    background-color: white;
+    color: black;
+    padding: 2rem;    
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 2100;
+}
+
+#filtros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 1rem;
+}
+
+#main-contato {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+}
+
+#inscrever-contato {
+    display: none;
+}
+
+@media only screen and (min-width: 700px) {
+    h4, #descricao-principal, p {
+        font-size: 1.8rem;
+    }
+
+    #main-contato h1 {
+        font-size: 3.5rem;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #nav-bar {
+        display: flex;
+    }
+
+    #links {
+        background-color: #FCFCFD;
+        color: black;
+        font-weight: bold;
+        display: flex;
+        margin-bottom: -1rem;
+        width: 100%;
+    }
+
+    #links li {
+        margin-right: 2rem;
+    }
+
+    #main-index {
+        display: grid;
+        gap: 2;
+        margin: 5rem;
+        grid-template-areas: 
+        "titulo img"
+        "texto img"
+        "botoes img";
+    }
+
+    #titulo {
+        grid-area: titulo;
+        font-size: 4rem;
+    }
+    
+    #descricao-principal{
+        width: 100%;
+    }
+    
+    #imagem-principal {
+        margin-left: 3.5rem;
+        max-width: 45rem;
+    }
+
+    #cursos-btn {
+        width: 30rem;
+    }
+
+    #botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #btn-header {
+        margin-top: -2rem;
+    }
+
+    .inscrever, #submit-form {
+        font-size: 1.9rem;
+        width: 25rem;
+    }
+
+    #btn-header {
+        width: 17rem;
+    }
+
+    #Parceiros {
+        padding: 3rem;
+    }
+
+    #conteudo-metodos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+
+    .metodo {
+        font-size: 1.6rem;
+        height: 23rem;
+        max-width: 30rem;
+    }
+
+    #Inscrever {
+        padding: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #desconto-inscrever {
+        font-size: 5rem;
+        max-width: 50rem;
+    }
+
+    #inscricao-final {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #logo {
+        width: 13rem;
+    }
+
+    #busca-cursos {
+        width: 25rem;
+        font-size: 1.6rem;
+    }
+
+    #main-index {
+        padding: 7rem;
+    }
+
+    #desconto-inscrever {
+        font-size: 6.7rem;
+    }
+}

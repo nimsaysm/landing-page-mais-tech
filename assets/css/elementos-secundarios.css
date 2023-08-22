@@ -1,0 +1,246 @@
+#logo {
+    width: 10rem;
+    margin-left: -2rem;
+}
+
+#busca {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#busca-cursos {
+    padding: 0.5rem 1.8rem 0.5rem 0.5rem;
+    width: 17.5rem;
+    height: 2.5rem;
+    font-size: 1.4rem;
+    font-family: var(--font-family);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+#lupa {
+    background-color: transparent;
+    border: none;
+}
+
+#lupa-busca {
+    margin-left: -2rem;
+    margin-top: 0.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#link-atual {
+    color: var(--purple);
+}
+
+.link {
+    font-size: 1.7rem;
+    color: black;
+}
+
+#main-contato a {
+    color: var(--dark-purple);
+}
+
+.inscrever, #submit-form {
+    margin-top: 2rem;
+    font-family: var(--font-family);
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    background-color: var(--purple);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: var(--radius);
+    width: 20rem;
+    filter: var(--shadow);
+}
+
+.highlight {
+    color: black;
+    background-color: var(--medium-purple-background);
+}
+
+#botoes {
+    grid-area: botoes;
+}
+
+#inscricao-principal, #cursos-btn {
+    margin: 0.5rem;
+}
+
+#cursos-btn, #ver-cursos {
+    font-family: var(--font-family);
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    color: var(--purple);
+    background-color: transparent;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: var(--radius);
+}
+
+#empresas img {
+    width: 5rem;
+    margin: 1rem;
+}
+
+
+.metodo {
+    background-color: var(--medium-purple-background);
+    max-width: 25rem;
+    height: 20rem;
+    margin: 2rem;
+    padding: 1rem;
+    display: grid;
+    align-items: center;
+    border-radius: var(--radius);
+}
+
+.metodo h5 {
+    color: var(--dark-purple);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.curso {
+    margin: 1rem;
+    text-align: center;
+    justify-items: center;
+}
+
+.img-curso {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+.nome-curso {
+    color: black;
+}
+
+#ver-cursos {
+    margin: 2rem;
+    font-size: 1.4rem;
+    color: var(--blue-color-text);
+}
+
+.botoes-avaliacoes {
+    justify-content: end;
+    display: flex;
+}
+
+.botoes-avaliacoes i {    
+    font-size: 3.7rem;
+}
+
+.depoimento {
+    background-color: var(--medium-purple-background);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    margin: 1rem 1rem 3rem 1rem;
+    max-width:50rem;
+}
+
+.img-aluno {
+    width: 5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.depoimento-rodape {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    font-weight: 700;
+}
+
+
+#desconto-inscrever {
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+#info-plano {
+    background-color: white;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 2rem;
+    text-align: center;
+    max-width: 35rem;
+}
+
+#descricao-plano {
+    margin-top: 2rem;
+    text-align: left;
+    text-align: center;
+}
+
+#descricao-plano li {
+    padding: 0.5rem;
+}
+
+#descricao-plano li:before {
+    content: '✓ ';
+    color: var(--purple);
+}
+
+#preco {
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0.8rem;
+}
+
+#preco-pequeno {
+    font-size: 1.3rem;
+}
+
+.icone-contato {
+    margin: 2rem 1rem 0rem 1rem;
+    width: 3rem;
+}
+
+.filtro {
+    font-family: var(--font-family);
+    font-size: 1.4rem;
+    width: 11rem;
+    height: 3rem;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: #98A2B3;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    border-radius: 2rem;
+}
+
+
+#main-contato h1 {
+    color: #a7aebf;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+}
+
+#img-contato {
+    width: 15rem;
+    border-radius: 50%;
+}
+
+#main-contato a {
+    color: #825dd7;
+}
+
+#main-contato p {
+    margin-top: 1rem;
+}
