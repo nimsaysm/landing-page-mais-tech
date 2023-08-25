@@ -54,12 +54,16 @@ function landingPage() {
         areaConfirmarDados.classList.remove('aberto');
         formInscricao.classList.remove('aberto');
         alert('Sua inscrição foi realizada com sucesso!');
+        recarregarPagina();
     });
 
     btnAlterarCadastro.addEventListener('click', function() {
         areaConfirmarDados.classList.remove('aberto');
-    })
+    });
 
+    function recarregarPagina() {
+        window.location.reload();
+    }
 }
 
 window.addEventListener("DOMContentLoaded", function() {
