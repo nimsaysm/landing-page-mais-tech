@@ -11,7 +11,7 @@
 
 #busca-cursos {
     padding: 0.5rem 1.8rem 0.5rem 0.5rem;
-    width: 17.5rem;
+    width: 15rem;
     height: 2.5rem;
     font-size: 1.4rem;
     font-family: var(--font-family);
@@ -93,7 +93,7 @@
 .metodo {
     background-color: var(--medium-purple-background);
     max-width: 25rem;
-    height: 20rem;
+    height: 23rem;
     margin: 2rem;
     padding: 1rem;
     display: grid;
@@ -159,7 +159,6 @@
     font-weight: 700;
 }
 
-
 #desconto-inscrever {
     color: white;
     font-size: 4rem;
@@ -202,6 +201,42 @@
     font-size: 1.3rem;
 }
 
+#dados-inscricao h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#dados-cadastrados p {
+    margin: 0.8rem;
+}
+
+#dados-confirmados {
+    margin-top: 2rem;
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    background-color: var(--blue-color-text);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: var(--radius);
+    width: 20rem;
+    filter: var(--shadow);
+}
+
+#voltar-cadastro {
+    margin-top: 1rem;
+    font-family: var(--font-family);
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    color: var(--blue-color-text);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .icone-contato {
     margin: 2rem 1rem 0rem 1rem;
     width: 3rem;
@@ -222,7 +257,6 @@
     border: none;
     border-radius: 2rem;
 }
-
 
 #main-contato h1 {
     color: #a7aebf;

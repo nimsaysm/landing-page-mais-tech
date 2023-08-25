@@ -53,8 +53,16 @@ html {
     line-height: 4rem;
 }
 
-#nav-bar {
+.js #nav-bar {
     display: none;
+}
+
+#menu {
+    display: none;
+}
+
+.js #menu {
+    display: flex;
 }
 
 #main-index {
@@ -80,13 +88,21 @@ html {
     grid-area: texto;
     margin-bottom: 3rem;
     width: 100%;
-    line-height: 3.5rem;
 }
 
 #imagem-principal {
     grid-area: img;
     border-radius: 50%;
     width: 30vw;
+}
+
+#botoes {
+    grid-area: botoes;
+}
+
+#inscricao-principal, #cursos-btn {
+    width: 45vw;
+    max-width: 30rem;
 }
 
 #Parceiros {
@@ -117,6 +133,8 @@ html {
 #imagens-cursos {
     display: flex;
     flex-wrap: wrap;
+    max-width: 75rem;
+    margin: auto;
     justify-content: center;
     filter: var(--shadow);
 }
@@ -211,7 +229,8 @@ form {
     border-radius: 1.5rem;
     background-color: white;
     color: black;
-    padding: 2rem;    
+    padding: 2rem;
+    margin: 1rem;    
     text-align: center;
     display: grid;
     place-items: center;
@@ -230,11 +249,31 @@ form {
 #main-contato {
     text-align: center;
     margin-top: 4rem;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
 }
 
 #inscrever-contato {
     display: none;
+}
+
+#voltar-topo {
+    color: #344054ec;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background-color: #d0d5dddc;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    visibility: hidden;
+}
+
+#voltar-topo:hover {
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 700px) {
@@ -252,11 +291,11 @@ form {
         justify-content: space-around;
     }
 
-    #menu {
+    #menu, .js #menu {
         display: none;
     }
 
-    #nav-bar {
+    #nav-bar, .js #nav-bar {
         display: flex;
     }
 
@@ -287,6 +326,13 @@ form {
         grid-area: titulo;
         font-size: 4rem;
     }
+
+    #botoes {
+        grid-area: botoes;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
     #descricao-principal{
         width: 100%;
@@ -295,16 +341,6 @@ form {
     #imagem-principal {
         margin-left: 3.5rem;
         max-width: 45rem;
-    }
-
-    #cursos-btn {
-        width: 30rem;
-    }
-
-    #botoes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     #btn-header {

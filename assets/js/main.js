@@ -1,16 +1,19 @@
 import { menu } from './menu.js';
 import { avaliacoes } from './avaliacoes.js';
+import { topoPagina } from './topo-pagina.js';
 
 
 function landingPage() {    
     menu();
     avaliacoes();
+    topoPagina();
     
     //form de inscrição
     const btnInscricao = document.querySelector('#inscricao-final');
     const formInscricao = document.querySelector('#form-inscricao');
     const fecharForm = document.querySelector('#fechar-form');
 
+    //confirmar cadastro
     const areaConfirmarDados = document.querySelector('#confirmar-dados');
     const conteudoDadosInscricao = document.querySelector('#dados-cadastrados');
     const btnConfirmaDados = document.querySelector('#dados-confirmados');

@@ -1,9 +1,11 @@
 import { menu } from './menu.js';
 import { pesquisa } from './pesquisa-input.js';
+import { topoPagina } from './topo-pagina.js';
 
 document.addEventListener("DOMContentLoaded", function() {
     menu();
     pesquisa();
+    topoPagina();
 
     const cursos = document.querySelectorAll('.curso');
     //filtrar

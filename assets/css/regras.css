@@ -2,15 +2,15 @@ input:focus, select:focus {
     outline: 1px solid var(--purple);
 }
 
-#menu:hover {
+.js #menu:hover {
     cursor: pointer;
 }
 
-#menu.ativo {
+.js #menu.ativo {
     transform: rotate(90deg);
 }
 
-#nav-bar.menu-aberto {
+.js #nav-bar.menu-aberto {
     display: block;
 }
 
@@ -34,7 +34,6 @@ input:focus, select:focus {
 #ver-cursos:hover {
     color: var(--dark-purple);
 }
-
 
 .botoes-avaliacoes i:hover {
     cursor: pointer;
@@ -61,6 +60,14 @@ input:focus, select:focus {
     background-color: var(--dark-purple);
 }
 
+#dados-confirmados:hover {
+    background-color: #5f6876;
+}
+
+#voltar-cadastro:hover {
+    color: #5f6876;
+}
+
 .icone-contato:hover {
     filter: drop-shadow(0px 6px 16px #f9f5ff4a)
 }
@@ -77,4 +84,8 @@ input:focus, select:focus {
 
 #main-contato a:hover {
     color: #3d2080;
+}
+
+.js #voltar-topo.btn-voltar {
+    visibility: visible;
 }
